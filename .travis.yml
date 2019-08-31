@@ -1,0 +1,14 @@
+language: node_js
+node_js:
+- '8.9.4'
+before_install:
+- npm install -g @angular/cli
+install: npm install
+branches:
+  only:
+  - master
+deploy:
+  provider: heroku
+  api_key: 
+    secure:  3d1959c4-9d87-448c-bd6f-79ff189b6079
+  app: client-turing-ecommerce
