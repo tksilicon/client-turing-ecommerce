@@ -5,9 +5,12 @@ before_install:
 - npm install -g npm
 script:
 - npm install
-- npm run test
+- npm run test-headless
 deploy:
   provider: heroku
   api_key: 
     secure:  
   app: client-turing-ecommerce
+  on:
+    repo: tksilicon/client-turing-ecommerce
+  
