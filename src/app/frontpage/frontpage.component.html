@@ -8,30 +8,35 @@
 
 				<mat-list>
 					<ng-container *ngFor="let department of departments">
-					
-						<mat-list-item>
-						<h1 mat-line>
-							<a  mat-button
-								[routerLink]="['/api/department/', department.departmentId]"><div style="color:red;"><h1>{{department.name}}</h1></div></a>
-						</h1>
-						
 
-					</mat-list-item >
-					
-                         
-						 <mat-list >
-          				 	 <div   *ngFor="let category of categories">
-									
-                				<mat-list-item *ngIf="department.departmentId===category.departmentId" >
-									<h3 mat-line > <a  mat-button
-										[routerLink]="['/api/categories/inDepartment/', department.departmentId]"><div style="color:black;"><h3>{{category.name}}</h3></div></a>
+						<mat-list-item>
+							<h1 mat-line>
+								<a mat-button [routerLink]="['/api/department/', department.departmentId]">
+									<div style="color:red;">
+										<h1>{{department.name}}</h1>
+									</div>
+								</a>
+							</h1>
+						</mat-list-item>
+
+
+						<mat-list>
+							<div *ngFor="let category of categories">
+
+								<mat-list-item *ngIf="department.departmentId===category.departmentId">
+									<h3 mat-line> <a mat-button
+											[routerLink]="['/api/categories/inDepartment/', department.departmentId]">
+											<div style="color:black;">
+												<h3>{{category.name}}</h3>
+											</div>
+										</a>
 									</h3>
 								</mat-list-item>
-								
+
 							</div>
-						 </mat-list>
-						
-						
+						</mat-list>
+
+
 					</ng-container>
 				</mat-list>
 			</div>
