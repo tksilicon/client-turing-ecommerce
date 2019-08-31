@@ -1,0 +1,93 @@
+<div class="bounds">
+
+	<div class="content" fxLayout="row" fxLayout.xs="row" fxFlexFill>
+
+		<div fxFlex="25" class="sec1" fxFlex.xs="25">
+
+			<div fxFlex="100" class="sec6" fxFlex.xs="100">
+
+				<mat-list>
+					<ng-container *ngFor="let department of departments">
+					
+						<mat-list-item>
+						<h1 mat-line>
+							<a  mat-button
+								[routerLink]="['/api/department/', department.departmentId]"><div style="color:red;"><h1>{{department.name}}</h1></div></a>
+						</h1>
+						
+
+					</mat-list-item >
+					
+                         
+						 <mat-list >
+          				 	 <div   *ngFor="let category of categories">
+									
+                				<mat-list-item *ngIf="department.departmentId===category.departmentId" >
+									<h3 mat-line > <a  mat-button
+										[routerLink]="['/api/categories/inDepartment/', department.departmentId]"><div style="color:black;"><h3>{{category.name}}</h3></div></a>
+									</h3>
+								</mat-list-item>
+								
+							</div>
+						 </mat-list>
+						
+						
+					</ng-container>
+				</mat-list>
+			</div>
+		</div>
+
+
+
+		<!--<mat-list>
+    <ng-container *ngFor="let item of items">
+        <mat-list-item>{{item.name}}</mat-list-item>
+        <mat-list style="margin-left:30px;">
+            <div *ngFor="let subItem of item.subItems">
+                <mat-list-item>{{ subItem.name }}</mat-list-item>
+            </div>
+        </mat-list>
+    </ng-container>
+</mat-list>-->
+
+		<div fxFlex="75" class="sec2" fxFlex.xs="75">
+
+			<div class="content2" fxLayout="column" fxLayout.xs="row" fxFlexFill>
+
+				<div fxFlex="50" class="sec4" fxFlex.xs="50">
+
+					<div>
+						<h1>New Trend</h1>
+					</div>
+					<div>Scandi-cool </div>
+					<div><button class="button button4">Shop</button></div>
+
+				</div>
+
+				<div fxFlex="50" class="sec5" fxFlex.xs="50">
+
+
+					<div class="" fxLayout="row" fxLayout.xs="row" fxFlexFill>
+
+						<div fxFlex="60" class="sec7" fxFlex.xs="60">
+							<h1>Blue</h1>
+							<h3>Shop now</h3>
+
+						</div>
+						<div fxFlex="40" class="sec8" fxFlex.xs="40">
+							<h1>Purple</h1>
+							<h3>Shop now</h3>
+
+						</div>
+
+					</div>
+
+
+				</div>
+
+
+			</div>
+
+		</div>
+
+	</div>

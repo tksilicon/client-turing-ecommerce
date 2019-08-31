@@ -1,0 +1,136 @@
+/* Add application styles & imports to this file! background-color: #ddd; */
+
+.bounds {
+  height: 80%;
+}
+
+.sec1 {
+  text-transform: uppercase
+}
+
+.sec2 {
+  
+  color: white;
+
+}
+
+.sec3 {
+  
+  text-transform: uppercase
+}
+
+
+.sec4 {
+  
+  text-transform: uppercase;
+  background: url(/assets/images/frontpage/earphone.png);
+  background-size: 100% 100%;
+}
+
+.sec5 {
+  
+  text-transform: uppercase
+}
+
+.sec6 {
+
+  text-transform: capitalize
+}
+
+.sec7 {
+  
+  text-transform: uppercase;
+  opacity: 0.4;
+  background: url(/assets/images/frontpage/legs.png);
+  background-size: 100% 100%;
+}
+
+
+
+.sec8 {
+ 
+  text-transform: uppercase;
+  background: url(/assets/images/frontpage/orangenew.png);
+  background-size: 100% 100%;
+}
+
+
+.sec1,
+.sec2,
+.sec3 {
+  padding-top: 20px;
+  text-align: center
+}
+
+.sec4 {
+  margin-top: 0px;
+  padding-top:100px;
+  padding-left:150px;
+  text-align: left;
+  margin-bottom: 10px;
+
+}
+
+
+.sec5 {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.sec6 {
+  
+  text-align: left;
+  margin-top: 10px;
+  margin-right: 10px;
+  padding-left: 50px;
+  
+}
+
+
+.sec7 {
+  margin-top: 0px;
+  text-align: center;
+  margin-right: 20px;
+  margin-left: 20px;
+  padding-top:150px;
+
+}
+
+.sec8 {
+  margin-top: 0px;
+  text-align: center;
+  margin-left: 10px;
+  padding-top:150px;
+
+}
+
+.content {
+   min-height: 300px;
+   padding-right: 10px;
+}
+
+
+button {
+    background-color: white;
+    border: none;
+    color: red;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 2px;
+}
+
+.button4 {
+  border-radius: 12px;
+  width: 200px;
+}
+
+
+
+
+
+
+
