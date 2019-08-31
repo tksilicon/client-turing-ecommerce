@@ -2,6 +2,8 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { FrontpageComponent } from './frontpage.component';
 import { AppMaterialModule } from '../app-material/app-material.module';
+import { AppRoutingModule } from '../app-routing.module';
+import { HttpClientModule } from '@angular/common/http';
 
 describe('FrontpageComponent', () => {
   let component: FrontpageComponent;
@@ -12,7 +14,10 @@ describe('FrontpageComponent', () => {
       declarations: [ FrontpageComponent ],
       imports: [
       /* Here, import your Angular material modules */
-      AppMaterialModule
+      AppMaterialModule,
+      AppRoutingModule,
+    HttpClientModule,
+    AppMaterialModule
     ],
     })
 
