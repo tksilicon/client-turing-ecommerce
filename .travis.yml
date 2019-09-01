@@ -9,7 +9,7 @@ script:
 deploy:
   provider: heroku
   api_key: 
-    secure:  
+    secure: "secure api key" 
   app: client-turing-ecommerce
   on:
     repo: tksilicon/client-turing-ecommerce
