@@ -9,7 +9,7 @@ script:
 deploy:
   provider: heroku
   api_key: 
-    secure: "m6PAwIasutv43iAOXdwdrc0xW4x9rOx0BmJa+ILIyLZRP5UaQf8aT/UNSat4cOBA7Ye+dmUa3zLPe2k3XJvJ9d95/DmWbJRMc4VaavnfTZEfq3Psb02JxWvxEX0gfhdaW07Opshf2W+f1O+x+Icp9Zu3uf0fhsI9ceDAZ9ApBswgxGd1A87GAaaz3xIJX3a3IQXFMj48Fg0SSJOifru8a9bRJjR6SUcGWq/zeR+E4x3zRmWNzkfNKGIVtyTR4BXWpvpJijqg7RbQugjvNo+ZsLaTiIRzuds5tgbGmTXWUQnH4R8epzm02o/RgECWRWY+5PPpk+3RQRvwut7jiKmeJlmV0RpnGECcHLLB/cAF3LVM2iAIHo5/BslEALT9Lb95aQh49cS4G8uqrfaG4kUzfkVl+opotuHdnDJzoIQ4UzCn7+hOhmao0Sf0imFvPpkw6SEQVNx5VmthuoXdqiA7yvBVnxEBG4t0gp/yMOrjeDc65LYdRF8snjrPq8sQrfeFNKeUfUZC889JwjKSvF4aXq59rSxS3BRfvxPI6M7K6L0SEQoVRcZtTY/91SaPctNMixdHzQku/CeEqhEMVR6lSNubm0o2GyfQwmnHfpQeRcj9/VG4+FsXxbV3MZyD3TXLMoaka/0IGuuPkipZZ/LgcIbEDEXNAdMlByqjwvOrwRk="
+    secure: 3d1959c4-9d87-448c-bd6f-79ff189b6079
   app: client-turing-ecommerce
   on:
     repo: tksilicon/client-turing-ecommerce
