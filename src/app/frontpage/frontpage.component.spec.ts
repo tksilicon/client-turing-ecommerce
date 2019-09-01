@@ -1,36 +1,39 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { Type } from '@angular/core';
 import { FrontpageComponent } from './frontpage.component';
-import { AppMaterialModule } from '../app-material/app-material.module';
-import { AppRoutingModule } from '../app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
+import { HttpTestingController } from '@angular/common/http/testing';
+import { DeptcategoryService } from '../shared/deptcategory.service';
 
 describe('FrontpageComponent', () => {
   let component: FrontpageComponent;
   let fixture: ComponentFixture<FrontpageComponent>;
+  let httpMock: HttpTestingController;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ FrontpageComponent ],
+      declarations: [FrontpageComponent],
       imports: [
-      /* Here, import your Angular material modules */
-      AppMaterialModule,
-      AppRoutingModule,
-    HttpClientModule,
-    AppMaterialModule
-    ],
-    })
-
-    .compileComponents();
-  }));
-
-  beforeEach(() => {
+        HttpClientModule
+      ],
+      providers: [
+        DeptcategoryService,
+      ],
+    }).compileComponents();
     fixture = TestBed.createComponent(FrontpageComponent);
     component = fixture.componentInstance;
+
+
+    httpMock = fixture.debugElement.injector.get<HttpTestingController>(HttpTestingController as Type<HttpTestingController>);
+
     fixture.detectChanges();
+  }));
+
+  afterEach(() => {
+    httpMock.verify();
   });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
 });
+
+
+
