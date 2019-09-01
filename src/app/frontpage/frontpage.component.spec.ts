@@ -8,7 +8,7 @@ import { DeptcategoryService } from '../shared/deptcategory.service';
 describe('FrontpageComponent', () => {
   let component: FrontpageComponent;
   let fixture: ComponentFixture<FrontpageComponent>;
-  let httpMock: HttpTestingController;
+  let httpMock: HttpTestingController; 
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
